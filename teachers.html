@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teachers & Staff – ABC Matriculation Higher Secondary School</title>
+  <meta name="description" content="Meet the dedicated teachers and staff of ABC School. Search and filter by subject. 100+ qualified educators committed to student excellence." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+</head>
+<body>
+<nav class="navbar" id="navbar"><div class="container navbar__inner">
+  <a href="index.html" class="navbar__brand"><div class="navbar__logo">🏫</div><div class="navbar__school-name"><span class="name-main">ABC Matric. Hr. Sec. School</span><span class="name-sub">Excellence in Education Since 1999</span></div></a>
+  <nav class="navbar__nav">
+    <a href="index.html" class="nav__link">Home</a><a href="about.html" class="nav__link">About</a>
+    <a href="academics.html" class="nav__link">Academics</a><a href="admissions.html" class="nav__link">Admissions</a>
+    <a href="departments.html" class="nav__link">Departments</a><a href="teachers.html" class="nav__link active">Teachers</a>
+    <a href="facilities.html" class="nav__link">Facilities</a><a href="gallery.html" class="nav__link">Gallery</a>
+    <a href="events.html" class="nav__link">Events</a><a href="contact.html" class="nav__link">Contact</a>
+  </nav>
+  <div class="navbar__cta"><a href="admissions.html" class="btn btn--accent btn--sm">Apply Now</a></div>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</div></nav>
+<div class="navbar__mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-nav__link">🏠 Home</a><a href="about.html" class="mobile-nav__link">ℹ️ About</a>
+  <a href="academics.html" class="mobile-nav__link">📚 Academics</a><a href="admissions.html" class="mobile-nav__link">📝 Admissions</a>
+  <a href="departments.html" class="mobile-nav__link">🏛️ Departments</a><a href="teachers.html" class="mobile-nav__link active">👩‍🏫 Teachers</a>
+  <a href="facilities.html" class="mobile-nav__link">🏟️ Facilities</a><a href="gallery.html" class="mobile-nav__link">🖼️ Gallery</a>
+  <a href="events.html" class="mobile-nav__link">📅 Events</a><a href="contact.html" class="mobile-nav__link">📞 Contact</a>
+  <div class="mobile-nav__cta"><a href="admissions.html" class="btn btn--primary" style="width:100%;justify-content:center;">Apply Now</a></div>
+</div>
+
+<section class="page-hero page-body">
+  <div class="container page-hero__content">
+    <div class="section__label">Our Educators</div>
+    <h1 class="page-hero__title">Teachers & Staff</h1>
+    <p class="page-hero__subtitle">Meet the passionate, dedicated educators who shape the future of our students every day</p>
+    <div class="page-hero__breadcrumb"><a href="index.html">Home</a><span>/</span><span>Teachers & Staff</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal">
+      <div class="section__label">Our Faculty</div>
+      <h2 class="section__title">Meet Our <span class="text-primary">Teachers</span></h2>
+      <p class="section__subtitle">100+ qualified educators committed to nurturing every student's potential.</p>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="search-bar reveal">
+      <div class="search-input-wrap">
+        <span class="icon">🔍</span>
+        <input type="text" id="teacherSearch" class="search-input" placeholder="Search by name or subject..." aria-label="Search teachers" />
+      </div>
+      <select id="teacherFilter" class="filter-select" aria-label="Filter by subject">
+        <option value="">All Subjects</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="science">Science</option>
+        <option value="english">English</option>
+        <option value="tamil">Tamil</option>
+        <option value="computer science">Computer Science</option>
+        <option value="social science">Social Science</option>
+        <option value="commerce">Commerce</option>
+        <option value="physical education">Physical Education</option>
+      </select>
+    </div>
+
+    <!-- Teacher Cards Grid -->
+    <div class="grid grid--4" id="teachersGrid">
+
+      <div class="teacher-card" data-name="Mrs. Anitha Devi" data-subject="mathematics">
+        <div class="teacher-card__img-wrap">
+          <img src="assets/images/teacher1.jpg" alt="Mrs. Anitha Devi" class="teacher-card__img" />
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mrs. Anitha Devi</div>
+          <div class="teacher-card__subject">Mathematics</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.Sc., B.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 15 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Rajkumar S." data-subject="science">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder">R</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Rajkumar S.</div>
+          <div class="teacher-card__subject">Physics & Science</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.Sc., M.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 18 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mrs. Preethi Sharma" data-subject="english">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#dc2626,#991b1b)">P</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mrs. Preethi Sharma</div>
+          <div class="teacher-card__subject">English Language & Literature</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.A., B.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 12 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Murugan Pillai" data-subject="tamil">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#d97706,#b45309)">M</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Murugan Pillai</div>
+          <div class="teacher-card__subject">Tamil Language</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.A. Tamil</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 20 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Karthik Rajan" data-subject="computer science">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#0891b2,#0e7490)">K</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Karthik Rajan</div>
+          <div class="teacher-card__subject">Computer Science</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.C.A., B.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 10 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mrs. Kavitha Nair" data-subject="social science">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#be185d,#9d174d)">K</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mrs. Kavitha Nair</div>
+          <div class="teacher-card__subject">Social Science</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.A., B.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 14 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Ramesh Babu" data-subject="commerce">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">R</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Ramesh Babu</div>
+          <div class="teacher-card__subject">Commerce & Accountancy</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.Com., B.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 16 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Suresh Pandian" data-subject="physical education">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#059669,#047857)">S</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Suresh Pandian</div>
+          <div class="teacher-card__subject">Physical Education</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> B.P.Ed., M.P.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 13 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mrs. Lakshmi Priya" data-subject="mathematics">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#1d6fa4,#2589c7)">L</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mrs. Lakshmi Priya</div>
+          <div class="teacher-card__subject">Mathematics (HOD)</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.Sc., Ph.D.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 22 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Venkatesh M." data-subject="science">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#dc2626,#991b1b)">V</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Dr. Venkatesh M.</div>
+          <div class="teacher-card__subject">Chemistry & Science (HOD)</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> Ph.D. Chemistry</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 25 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mrs. Sindhu Krishnan" data-subject="english">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#d97706,#b45309)">S</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mrs. Sindhu Krishnan</div>
+          <div class="teacher-card__subject">English (Senior Grade)</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> M.A. English</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 11 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-card" data-name="Mr. Arjun Selvan" data-subject="computer science">
+        <div class="teacher-card__img-wrap">
+          <div class="teacher-card__placeholder" style="background:linear-gradient(135deg,#be185d,#9d174d)">A</div>
+        </div>
+        <div class="teacher-card__body">
+          <div class="teacher-card__name">Mr. Arjun Selvan</div>
+          <div class="teacher-card__subject">Computer Science & IT</div>
+          <div class="teacher-card__details">
+            <div class="teacher-card__detail"><strong>Qual:</strong> B.Tech., M.Ed.</div>
+            <div class="teacher-card__detail"><strong>Exp:</strong> 8 yrs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-results" id="noTeacherResults">
+        <div style="font-size:3rem;margin-bottom:1rem">🔍</div>
+        <p>No teachers found matching your search. Try a different name or subject.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Admin Staff -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section__header reveal">
+      <div class="section__label">Support Team</div>
+      <h2 class="section__title">Administrative <span class="text-primary">Staff</span></h2>
+      <p class="section__subtitle">The backbone of our school operations — dedicated professionals who keep everything running smoothly.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card reveal delay-1"><div class="card__body" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:0.75rem">👨‍💼</div>
+        <h3 style="font-size:1rem;margin-bottom:0.25rem">Mr. Senthil Kumar</h3>
+        <p style="font-size:0.8rem;color:var(--primary-500);font-weight:600;margin-bottom:0.5rem">Office Manager</p>
+        <p style="font-size:0.82rem;color:var(--text-secondary)">15+ years managing school administration and records.</p>
+      </div></div>
+      <div class="card reveal delay-2"><div class="card__body" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:0.75rem">👩‍💼</div>
+        <h3 style="font-size:1rem;margin-bottom:0.25rem">Mrs. Suganya R.</h3>
+        <p style="font-size:0.8rem;color:var(--primary-500);font-weight:600;margin-bottom:0.5rem">Admissions Coordinator</p>
+        <p style="font-size:0.82rem;color:var(--text-secondary)">Handles all admission inquiries and enrollment processes.</p>
+      </div></div>
+      <div class="card reveal delay-3"><div class="card__body" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:0.75rem">🏥</div>
+        <h3 style="font-size:1rem;margin-bottom:0.25rem">Nurse Meenakshi</h3>
+        <p style="font-size:0.8rem;color:var(--primary-500);font-weight:600;margin-bottom:0.5rem">School Nurse</p>
+        <p style="font-size:0.82rem;color:var(--text-secondary)">Certified nurse providing first aid and health monitoring.</p>
+      </div></div>
+      <div class="card reveal delay-4"><div class="card__body" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:0.75rem">📚</div>
+        <h3 style="font-size:1rem;margin-bottom:0.25rem">Mr. Selvam D.</h3>
+        <p style="font-size:0.8rem;color:var(--primary-500);font-weight:600;margin-bottom:0.5rem">Head Librarian</p>
+        <p style="font-size:0.82rem;color:var(--text-secondary)">Manages 20,000+ books and digital resources for students.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo"><div class="container"><div class="footer__top">
+  <div class="footer__brand"><div class="footer__logo-wrap"><div class="footer__logo">🏫</div><div class="footer__school-name">ABC Matriculation<br>Higher Secondary School</div></div><p class="footer__desc">Dedicated to quality education since 1999.</p><div class="footer__socials"><a href="#" class="footer__social-btn">📘</a><a href="#" class="footer__social-btn">▶️</a><a href="#" class="footer__social-btn">📷</a><a href="#" class="footer__social-btn">🐦</a></div></div>
+  <div><h3 class="footer__section-title">Quick Links</h3><ul class="footer__links"><li><a href="index.html" class="footer__link">→ Home</a></li><li><a href="about.html" class="footer__link">→ About Us</a></li><li><a href="academics.html" class="footer__link">→ Academics</a></li><li><a href="admissions.html" class="footer__link">→ Admissions</a></li><li><a href="teachers.html" class="footer__link">→ Teachers</a></li></ul></div>
+  <div><h3 class="footer__section-title">Explore</h3><ul class="footer__links"><li><a href="facilities.html" class="footer__link">→ Facilities</a></li><li><a href="gallery.html" class="footer__link">→ Gallery</a></li><li><a href="events.html" class="footer__link">→ Events</a></li><li><a href="contact.html" class="footer__link">→ Contact</a></li></ul></div>
+  <div><h3 class="footer__section-title">Contact</h3><div class="footer__contact-item"><span class="footer__contact-icon">📍</span><span>123, Education Nagar, Chennai – 600 006</span></div><div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span>+91 44 2345 6789</span></div><div class="footer__contact-item"><span class="footer__contact-icon">✉️</span><span>info@abcschool.edu.in</span></div></div>
+</div><div class="footer__bottom"><div class="footer__copyright">© 2026 ABC Matriculation Higher Secondary School.</div><div class="footer__bottom-links"><a href="#" class="footer__bottom-link">Privacy Policy</a><a href="#" class="footer__bottom-link">Terms</a></div></div></div></footer>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body></html>

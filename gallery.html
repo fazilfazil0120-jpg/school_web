@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – ABC Matriculation Higher Secondary School</title>
+  <meta name="description" content="Explore the ABC School photo gallery — campus life, events, sports, cultural programs, and student activities." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+</head>
+<body>
+<nav class="navbar" id="navbar"><div class="container navbar__inner">
+  <a href="index.html" class="navbar__brand"><div class="navbar__logo">🏫</div><div class="navbar__school-name"><span class="name-main">ABC Matric. Hr. Sec. School</span><span class="name-sub">Excellence in Education Since 1999</span></div></a>
+  <nav class="navbar__nav">
+    <a href="index.html" class="nav__link">Home</a><a href="about.html" class="nav__link">About</a>
+    <a href="academics.html" class="nav__link">Academics</a><a href="admissions.html" class="nav__link">Admissions</a>
+    <a href="departments.html" class="nav__link">Departments</a><a href="teachers.html" class="nav__link">Teachers</a>
+    <a href="facilities.html" class="nav__link">Facilities</a><a href="gallery.html" class="nav__link active">Gallery</a>
+    <a href="events.html" class="nav__link">Events</a><a href="contact.html" class="nav__link">Contact</a>
+  </nav>
+  <div class="navbar__cta"><a href="admissions.html" class="btn btn--accent btn--sm">Apply Now</a></div>
+  <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</div></nav>
+<div class="navbar__mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mobile-nav__link">🏠 Home</a><a href="about.html" class="mobile-nav__link">ℹ️ About</a>
+  <a href="academics.html" class="mobile-nav__link">📚 Academics</a><a href="admissions.html" class="mobile-nav__link">📝 Admissions</a>
+  <a href="departments.html" class="mobile-nav__link">🏛️ Departments</a><a href="teachers.html" class="mobile-nav__link">👩‍🏫 Teachers</a>
+  <a href="facilities.html" class="mobile-nav__link">🏟️ Facilities</a><a href="gallery.html" class="mobile-nav__link active">🖼️ Gallery</a>
+  <a href="events.html" class="mobile-nav__link">📅 Events</a><a href="contact.html" class="mobile-nav__link">📞 Contact</a>
+  <div class="mobile-nav__cta"><a href="admissions.html" class="btn btn--primary" style="width:100%;justify-content:center;">Apply Now</a></div>
+</div>
+
+<section class="page-hero page-body">
+  <div class="container page-hero__content">
+    <div class="section__label">Our Memories</div>
+    <h1 class="page-hero__title">Photo Gallery</h1>
+    <p class="page-hero__subtitle">A visual journey through campus life, events, sports, and student achievements</p>
+    <div class="page-hero__breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal">
+      <div class="section__label">Campus Life</div>
+      <h2 class="section__title">Our <span class="text-primary">Gallery</span></h2>
+      <p class="section__subtitle">Filter by category to explore different aspects of school life. Click any image to view in full.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filters" role="group" aria-label="Gallery category filter">
+      <button class="gallery-filter-btn active" data-filter="all" id="filter-all">All Photos</button>
+      <button class="gallery-filter-btn" data-filter="campus" id="filter-campus">🏫 Campus</button>
+      <button class="gallery-filter-btn" data-filter="events" id="filter-events">🎉 Events</button>
+      <button class="gallery-filter-btn" data-filter="sports" id="filter-sports">⚽ Sports</button>
+      <button class="gallery-filter-btn" data-filter="cultural" id="filter-cultural">🎭 Cultural</button>
+      <button class="gallery-filter-btn" data-filter="students" id="filter-students">👨‍🎓 Students</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item" data-category="campus" aria-label="School Main Building">
+        <div class="gallery-item__bg">🏫</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Main School Building</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="events" aria-label="Annual Day Celebration">
+        <div class="gallery-item__bg">🎉</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Annual Day 2025</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="sports" aria-label="Cricket Match">
+        <div class="gallery-item__bg">🏏</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Cricket Championship</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="cultural" aria-label="Classical Dance Performance">
+        <div class="gallery-item__bg">💃</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Classical Dance Performance</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="students" aria-label="Students in Classroom">
+        <div class="gallery-item__bg">📖</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Smart Classroom Session</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="campus" aria-label="School Library">
+        <div class="gallery-item__bg">📚</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Central Library</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="events" aria-label="Independence Day">
+        <div class="gallery-item__bg">🇮🇳</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Independence Day 2025</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="sports" aria-label="Football Tournament">
+        <div class="gallery-item__bg">⚽</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Football Tournament</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="cultural" aria-label="Music Concert">
+        <div class="gallery-item__bg">🎵</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">School Music Concert</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="students" aria-label="Science Lab">
+        <div class="gallery-item__bg">🔬</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Science Laboratory</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="campus" aria-label="School Garden">
+        <div class="gallery-item__bg">🌳</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Beautiful School Garden</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="events" aria-label="Science Exhibition">
+        <div class="gallery-item__bg">🔭</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Science Exhibition 2025</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="sports" aria-label="Basketball Game">
+        <div class="gallery-item__bg">🏀</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Basketball Championship</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="cultural" aria-label="Drama Performance">
+        <div class="gallery-item__bg">🎭</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">School Drama Performance</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="students" aria-label="Computer Lab">
+        <div class="gallery-item__bg">💻</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Computer Laboratory</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="campus" aria-label="School Auditorium">
+        <div class="gallery-item__bg">🎪</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">School Auditorium</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="events" aria-label="Prize Distribution">
+        <div class="gallery-item__bg">🏆</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Prize Distribution Ceremony</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="sports" aria-label="Athletics Track">
+        <div class="gallery-item__bg">🏃</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Athletics Day 2025</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="cultural" aria-label="Art Exhibition">
+        <div class="gallery-item__bg">🎨</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Art Exhibition</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="students" aria-label="Graduation Ceremony">
+        <div class="gallery-item__bg">🎓</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Graduation Ceremony</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="campus" aria-label="School Playground">
+        <div class="gallery-item__bg">🏟️</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">School Sports Complex</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="events" aria-label="Teacher's Day">
+        <div class="gallery-item__bg">👩‍🏫</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Teacher's Day Celebration</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="sports" aria-label="Chess Tournament">
+        <div class="gallery-item__bg">♟️</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">Inter-School Chess Tournament</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+      <div class="gallery-item" data-category="cultural" aria-label="Singing Competition">
+        <div class="gallery-item__bg">🎤</div>
+        <div class="gallery-item__overlay"><div class="gallery-item__label">School Singing Competition</div></div>
+        <div class="gallery-item__zoom">🔍</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="galleryLightbox" role="dialog" aria-label="Image viewer" aria-modal="true">
+  <div class="lightbox__inner">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+    <div class="lightbox__content">
+      <span style="font-size:6rem">🖼️</span>
+      <div class="lightbox__caption">Gallery Image</div>
+    </div>
+    <div class="lightbox__nav">
+      <button class="lightbox__nav-btn" id="lightboxPrev" aria-label="Previous image">←</button>
+      <button class="lightbox__nav-btn" id="lightboxNext" aria-label="Next image">→</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" role="contentinfo"><div class="container"><div class="footer__top">
+  <div class="footer__brand"><div class="footer__logo-wrap"><div class="footer__logo">🏫</div><div class="footer__school-name">ABC Matriculation<br>Higher Secondary School</div></div><p class="footer__desc">Dedicated to quality education since 1999.</p><div class="footer__socials"><a href="#" class="footer__social-btn">📘</a><a href="#" class="footer__social-btn">▶️</a><a href="#" class="footer__social-btn">📷</a><a href="#" class="footer__social-btn">🐦</a></div></div>
+  <div><h3 class="footer__section-title">Quick Links</h3><ul class="footer__links"><li><a href="index.html" class="footer__link">→ Home</a></li><li><a href="about.html" class="footer__link">→ About Us</a></li><li><a href="academics.html" class="footer__link">→ Academics</a></li><li><a href="admissions.html" class="footer__link">→ Admissions</a></li><li><a href="teachers.html" class="footer__link">→ Teachers</a></li></ul></div>
+  <div><h3 class="footer__section-title">Explore</h3><ul class="footer__links"><li><a href="facilities.html" class="footer__link">→ Facilities</a></li><li><a href="gallery.html" class="footer__link">→ Gallery</a></li><li><a href="events.html" class="footer__link">→ Events</a></li><li><a href="contact.html" class="footer__link">→ Contact</a></li></ul></div>
+  <div><h3 class="footer__section-title">Contact</h3><div class="footer__contact-item"><span class="footer__contact-icon">📍</span><span>123, Education Nagar, Chennai – 600 006</span></div><div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span>+91 44 2345 6789</span></div><div class="footer__contact-item"><span class="footer__contact-icon">✉️</span><span>info@abcschool.edu.in</span></div></div>
+</div><div class="footer__bottom"><div class="footer__copyright">© 2026 ABC Matriculation Higher Secondary School.</div><div class="footer__bottom-links"><a href="#" class="footer__bottom-link">Privacy Policy</a><a href="#" class="footer__bottom-link">Terms</a></div></div></div></footer>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body></html>
